@@ -1,0 +1,7 @@
+.formulas__list {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-evenly;
+}

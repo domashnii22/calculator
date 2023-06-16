@@ -1,0 +1,13 @@
+.formula__option-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.formulas__list-item:last-child
+  > .formula
+  > .formula__option
+  > .formula__option-text {
+  padding-bottom: 20px;
+}

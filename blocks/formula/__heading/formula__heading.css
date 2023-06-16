@@ -1,0 +1,11 @@
+.formula__heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.formulas__list-item:last-child > .formula > .formula__heading {
+  padding-bottom: 34px;
+}

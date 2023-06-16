@@ -1,0 +1,10 @@
+.page-container {
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: rgb(35, 49, 105);
+  padding: 0 20px 0;
+  box-sizing: border-box;
+}

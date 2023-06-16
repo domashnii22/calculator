@@ -1,0 +1,28 @@
+.formula {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  max-width: 300px;
+  width: 100%;
+  background-color: #d2e4fd;
+  animation: normal;
+}
+
+.formula:hover {
+  animation: bounce 3s ease 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(-15px);
+  }
+}

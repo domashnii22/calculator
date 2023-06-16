@@ -1,0 +1,7 @@
+.result__block_active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 100px;
+}

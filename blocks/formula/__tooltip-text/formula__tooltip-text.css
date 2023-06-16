@@ -1,0 +1,22 @@
+.formula__tooltip-text {
+  background-color: #fff1cb;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  position: absolute;
+  right: -370px;
+  bottom: 7px;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: none;
+  opacity: 0.95;
+  box-sizing: border-box;
+}
+
+.formula__tooltip-logo:hover + .formula__tooltip-text,
+.formula__tooltip-logoe:focus + .formula__tooltip-text {
+  display: block;
+}

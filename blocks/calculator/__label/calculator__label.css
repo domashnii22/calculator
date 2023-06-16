@@ -1,0 +1,25 @@
+.calculator__label {
+  display: flex;
+  gap: 5px;
+  position: relative;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.calculator__label .calculator__radio-button {
+  position: absolute;
+  opacity: 0;
+}
+
+.calculator__label .calculator__radio-button:checked + .calculator__span {
+  transform: translateZ(0px);
+  background-color: #fff1cb;
+}
+
+.calculator__label
+  .calculator__radio-button:checked
+  + .calculator__span::before {
+  opacity: 1;
+}

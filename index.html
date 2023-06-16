@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="/images/calculator-for-icon.svg" />
+    <title>Будь в форме!</title>
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page-container">
+        <header class="header">
+          <h1 class="header__heading">Будь в форме!</h1>
+        </header>
+        <main class="content">
+          <section class="formulas">
+            <ul class="formulas__list">
+              <li class="formulas__list-item">
+                <article class="formula">
+                  <h2 class="formula__heading">Формула Харриса - Бенедикта</h2>
+                  <div class="formula__option">
+                    <p class="formula__option-heading">Входные данные:</p>
+                    <p class="formula__option-text">
+                      &#10004; масса тела (кг)<br />
+                      &#10004; рост (см)<br />
+                      &#10004; возраст (полных лет)
+                    </p>
+                    <div class="formula__tooltip">
+                      <img
+                        class="formula__tooltip-logo"
+                        src="/images/info.svg"
+                        alt="Инфо"
+                      />
+                      <p class="formula__tooltip-text">
+                        УОО = (66.5 + (13.7 * МТ) + (5 * Р) - (6.8 * В)) * К -
+                        мужчины<br />
+                        УОО = (65.5 + (9.6 * МТ) + (1.8 * Р) - (4.7 * В)) * К -
+                        женщины<br />
+                        Здесь:<br />
+                        УОО - уровень основного обмена (ккал/сут.),<br />
+                        МТ - масса тела (кг),<br />
+                        Р - рост (см),<br />
+                        В - возраст (полных лет), К - коэффициент активности.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    data-goto=".calculator"
+                    class="formula__button"
+                    aria-label="Кнопка перехода к блоку"
+                    type="button"
+                  >
+                    Рассчитать
+                  </button>
+                </article>
+              </li>
+              <li class="formulas__list-item">
+                <article class="formula">
+                  <h2 class="formula__heading">Формула Миффлина - Сан Жеора</h2>
+                  <div class="formula__option">
+                    <p class="formula__option-heading">Входные данные:</p>
+                    <p class="formula__option-text">
+                      &#10004; масса тела (кг)<br />
+                      &#10004; рост (см)<br />
+                      &#10004; возраст (полных лет)
+                    </p>
+                    <div class="formula__tooltip">
+                      <img
+                        class="formula__tooltip-logo"
+                        src="/images/info.svg"
+                        alt="Инфо"
+                      />
+                      <p class="formula__tooltip-text">
+                        УОО = (10 * A + 6,25 * B – 5 * C + 5) * D - мужчины<br />
+                        УОО = (10 * A + 6,25 * B – 5 * C – 161) * D - женщины<br />
+                        Здесь:<br />
+                        УОО - уровень основного обмена (ккал/сут.),<br />
+                        A - масса тела (кг),<br />
+                        C - рост (см),<br />
+                        В - возраст (полных лет),<br />
+                        D - коэффициент активности.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    data-goto=".calculator"
+                    class="formula__button"
+                    aria-label="Кнопка перехода к блоку"
+                    type="button"
+                  >
+                    Рассчитать
+                  </button>
+                </article>
+              </li>
+              <li class="formulas__list-item">
+                <article class="formula">
+                  <h2 class="formula__heading">Формула Макдональда</h2>
+                  <div class="formula__option">
+                    <p class="formula__option-heading">Входные данные:</p>
+                    <p class="formula__option-text">
+                      &#10004; масса тела (кг)<br />
+                      <br />
+                    </p>
+                    <div class="formula__tooltip">
+                      <img
+                        class="formula__tooltip-logo"
+                        src="/images/info.svg"
+                        alt="Инфо"
+                      />
+                      <p class="formula__tooltip-text">
+                        УОО = A * X <br />
+                        Здесь:<br />
+                        УОО - уровень основного обмена (ккал/сут.),<br />
+                        A - масса тела (кг),<br />
+                        X - коэффициент активности.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    data-goto=".calculator"
+                    class="formula__button"
+                    aria-label="Кнопка перехода к блоку"
+                    type="button"
+                  >
+                    Рассчитать
+                  </button>
+                </article>
+              </li>
+            </ul>
+          </section>
+          <section class="calculator">
+            <form class="calculator__form">
+              <fieldset class="calculator__field">
+                <legend class="calculator__option">Формула:</legend>
+                <div class="calculator__radio-block">
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_formula"
+                      value="1"
+                      type="radio"
+                      name="formula"
+                      checked
+                    />
+                    <span class="calculator__span"></span>
+                    Харриса - Бенедикта
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_formula"
+                      value="2"
+                      type="radio"
+                      name="formula"
+                    />
+                    <span class="calculator__span"></span>
+                    Миффлина - Сан Жеора
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_formula"
+                      value="3"
+                      type="radio"
+                      name="formula"
+                    />
+                    <span class="calculator__span"></span>
+                    Макдональда
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="calculator__field">
+                <legend class="calculator__option">Цель:</legend>
+                <div class="calculator__radio-block">
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_source"
+                      value="0.85"
+                      name="goal"
+                      type="radio"
+                      checked
+                    />
+                    <span class="calculator__span"></span>
+                    Похудеть
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_source"
+                      value="1"
+                      name="goal"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    Узнать норму
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_source"
+                      value="1.15"
+                      name="goal"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    Поправиться
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="calculator__field">
+                <legend class="calculator__option">Пол:</legend>
+                <div class="calculator__radio-block">
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_gender"
+                      value="1"
+                      name="gender"
+                      type="radio"
+                      checked
+                    />
+                    <span class="calculator__span"></span>
+                    Мужчина
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_gender"
+                      value="2"
+                      name="gender"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    Женщина
+                  </label>
+                </div>
+              </fieldset>
+              <label class="calculator__parameter-heading"
+                >Масса тела (кг):</label
+              >
+              <input
+                class="calculator__input calculator__input_type_weight"
+                type="number"
+                required
+              />
+              <label class="calculator__parameter-heading">Рост (см):</label>
+              <input
+                class="calculator__input calculator__input_type_height"
+                type="number"
+                required
+              />
+              <label class="calculator__parameter-heading"
+                >Возраст (полных лет):</label
+              >
+              <input
+                class="calculator__input calculator__input_type_age"
+                type="number"
+                required
+              />
+              <fieldset class="calculator__field">
+                <legend class="calculator__option">
+                  Коэффициент физической активности:
+                </legend>
+                <div class="calculator__radio-block">
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_coef"
+                      value="1.2"
+                      name="number"
+                      type="radio"
+                      checked
+                    />
+                    <span class="calculator__span"></span>
+                    1.2
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_coef"
+                      value="1.35"
+                      name="number"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    1.35
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_coef"
+                      value="1.45"
+                      name="number"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    1.45
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_coef"
+                      value="1.6"
+                      name="number"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    1.6
+                  </label>
+                  <label class="calculator__label">
+                    <input
+                      class="calculator__radio-button calculator__radio-button_type_coef"
+                      value="1.8"
+                      name="number"
+                      type="radio"
+                    />
+                    <span class="calculator__span"></span>
+                    1.8
+                  </label>
+                  <div class="calculator__tooltip">
+                    <img
+                      class="calculator__tooltip-logo"
+                      src="/images/info.svg"
+                      alt="Инфо"
+                    />
+                    <p class="calculator__tooltip-text">
+                      1.2 – сидячий образ жизни;<br />
+                      1.35 – умеренная активность, т.е. легкие физические
+                      нагрузки либо занятия 1-3 раза в неделю;<br />
+                      1.45 – средняя активность, т.е. занятия 3-5 раз в
+                      неделю;<br />
+                      1.6 – активные люди, т.е. интенсивные нагрузки, занятия
+                      6-7 раз в неделю;<br />
+                      1.8 – спортсмены и люди, выполняющие сходные нагрузки 6-7
+                      раз в неделю.
+                    </p>
+                  </div>
+                </div>
+              </fieldset>
+              <button
+                class="calculator__button"
+                aria-label="Кнопка рассчета"
+                type="button"
+                data-goto=".result"
+                disabled
+              >
+                Получить результат
+              </button>
+            </form>
+          </section>
+          <section class="result">
+            <div class="result__block">
+              <h2 class="result__heading">Ваш результат:</h2>
+              <p class="result__value"></p>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <p class="footer__copyright">&copy; 2023. Гуськов Алексей</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+.calculator__radio-block {
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,15 @@
+.calculator__input {
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  border: 2px solid rgb(35, 49, 105);
+}
+
+.calculator__input:focus {
+  outline: 2px solid #fff1cb;
+  box-sizing: border-box;
+  border: 1px solid rgb(35, 49, 105);
+}

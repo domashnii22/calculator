@@ -1,0 +1,18 @@
+.formula__button {
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(35, 49, 105);
+  padding: 0;
+  border: 2px solid rgb(35, 49, 105);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.formula__button:hover {
+  background-color: #fff1cb;
+  transition: background-color 0.3s;
+}
